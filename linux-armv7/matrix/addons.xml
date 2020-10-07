@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="inputstream.adaptive.testing" name="InputStream Adaptive Testing" provider-name="peak3d" version="2.6.0.2">
+  <requires>
+<import addon="kodi.binary.global.main" minversion="1.2.0" version="1.2.4" />
+<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
+<import addon="kodi.binary.global.filesystem" minversion="1.1.0" version="1.1.6" />
+<import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.3" />
+<import addon="kodi.binary.instance.inputstream" minversion="2.3.1" version="2.3.3" />
+<import addon="kodi.binary.instance.videocodec" minversion="1.0.2" version="1.0.3" /></requires>
+  <extension extension="" library_linux="inputstream.adaptive.testing.so.2.6.0" listitemprops="license_type|license_key|license_data|license_flags|manifest_type|server_certificate|stream_headers|manifest_update_parameter|original_audio_language|media_renewal_url|media_renewal_time|max_bandwidth|play_timeshift_buffer" name="adaptive" point="kodi.inputstream" tags="true" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">InputStream client for adaptive streams</summary>
+    <summary lang="es_ES">Cliente InputStream para flujo de datos adaptativos</summary>
+    <description lang="en_GB">InputStream client for adaptive streams</description>
+    <description lang="es_ES">Cliente InputStream para flujo de datos adaptativos</description>
+    <platform>linux</platform>
+    <news>[B]Version v2.6.0.2[/B]
+- update travis secure token
+- TravisCI integraton to build repo
+- Update Ubuntu version to 16.04
+- Make build scripts take kodi version argument
+- Matrix build scripts
+- add build_scripts
+- remove debug flags
+- Don't stack subtitle if begin and end are equal
+- Revert "Correct Dolby Vision implementation (Matrix Only)"
+- Fix stream count
+- Fix Leia compatibilty in CDllHelper
+- Fix compile errors
+- add Matrix &gt; Leia patch
+- Change Android search path for ssd_wv
+- Use CDllHelper for opening ssd_wv
+- Update README.md
+- Add parsing adaptionSet "name" parameter
+- inputstream.adaptive -&gt; inputstream.adaptive.testing
+- Correct Dolby Vision implementation (Matrix Only)
+- Remove logging of unknown encryption methods
+- Fix up effective url
+- FreeSegments - operate on specific period
+- [HLS] EXT-X-DISCONTINUITY-SEQUENCE support
+- [HLS][Revert] share parameters between master / sub playlists
+- Fix url decoder
+- [WebVTT] Fix binary representation
+- [Android] only request and log (max)securitylevel and querykeystatus if
+- [TTML] Fix wrong applied m_ptsOffset on first sub
+- Fix url decoder
+- ctest implementation
+- [DASH] Adjust timing calculation
+- VUI: use framerate only if fixed_frame_rate_flag is set
+- Simplify processEncryption
+- allow new dolby schemeIdUri
+- Clang format
+- Add .clang-format
+- Check for representation duration if seek past last segment
+- [WEBVTT] Allow timespec without hours
+- [Android] Log DRM securityLevel after key request
+- Fix Netflix subs on seek / resume play
+- Fix segmented subtitles for live streams
+- [DASH] Fix youtube live subtitles
+- [DASH] Fix youtube live with multiple subs
+- Update Bento4 17e26f7 -&gt; 158655e
+- Revert ReadGolomb/SignedGolomb to static
+- pass ssd in with AP4_CencSampleDecrypter::Create
+- Bento4: sample duration workaround (24/1)
+- Android 32 ftello
+- Hack HBO
+- Fix segfault when AP4_Sample's seek fails (double free)
+- Implement SPS Frame parser to get fps before first packet is send
+- [HLS + CODEC] Fixups - MP4: Implement MP4 DAC3 Atom (get correct channel count)
+- More HLS and cleanup
+- Fix VideoStreamChange by VUI Parser
+- SPS/VUI: swap fpsrate / scale
+- AACL: generate ESDS / AVC extract VUI values from SPS
+- more SPS parameters
+- Redo Backport of all smoothstream changes commit
+- Add additional methods/funtions and passing poolid
+- Update bento4 libs to 17e26f7, fix path issues
+
+[B]Version 2.6.0-Matrix[/B]
+- Bump version in README.md
+- increase verion to 2.6.0 (API related)
+- change language set on addon.xml to en_GB
+- [HLS] Copy fpsScale for new periods
+- Fix aes128 HLS playlists with &gt; 1 key
+- [DASH] default timescale to seconds when not in segmenttemplate
+- api related updated
+- Support subtitle colors in span tags
+- Parse frame rates from HLS master playlists
+- Make IA more resilient on missing subtitle fragments
+- Support Dolby Vision in HLS dvh1 &amp; dvhe
+- Update audio codec name from esds atom
+
+[B]Version 2.5.6-Matrix[/B]
+- version bump 2.5.6
+- [HLS] rework multi-period / encryption
+- [ISM] Implement AnnexB to HVCC for ISM hevc codec extra data
+- [MediaDRM] check for empty keyResponse
+- [ISM] support HEVC
+- Wiseplay / Part2
+- Wiseplay implementation
+
+[B]Version 2.5.5-Matrix[/B]
+- Matrix Inputstream API change to v2.1.0 - Adaptive version 2.5.5 (#414)
+- HLS Widevine (#395)
+- [Android] check for SecurityLevel exceptions
+- [HLS] Fix double slash when using effective_url
+- Add missing string in german translation (#409)
+- Add spanish translation [es_ES] (#407)
+- Update to Croatia translation (hr_hr) (#406)
+- Updated Russian translation (#403)
+- Various translation fixes (#402)
+- Filled #30161 (greek) (#401)
+- Create strings.po
+- [Widevine] DecodeVideo: fix unencrypted packets
+- Added Romanian strings
+- Create slovak translation
+- [HLS] EXT-X-DISCONTINUITY (multiple periods) (#374)
+- Fixed nextEmpty on replaceAll
+- WebVTT fix for multiple rlm lrm in the same string
+- Correct logic for seekTimeCorrected
+- Ensure seeking to zero does not wrap around
+- Update strings.po
+- Fix for manual stream changing
+
+[B]Version 2.5.4-Matrix[/B]
+- version bump 2.5.4
+- Add video + sub media selection
+- [DASH] Use effective URL for manifest update
+- Addition of Greek strings.po
+- [DASH] Fix ZeroDiv for not timebased segment templates without given segment duration
+- Fixed WebVTT rlm and lrm
+- Add replace string helper
+- Update strings.po
+- create Hungarian translation
+- Create strings.po
+- Revert "dos2unix of patch files for dependencies"
+- Fixed and improved subtitle properties (#358)
+- dos2unix of patch files for dependencies
+- Translation - KR/JP
+- Update strings.po
+- Update Croatian translation
+- Init Croatian translation
+- Fix elapsed time with chapters
+- [depends] bump expat to 2.2.9
+- Add PL translation
+- Update main.cpp
+- Add Media Renewal Time
+
+[B]Version 2.5.3-Matrix[/B]
+- version bump 2.5.3
+- Fix PTSToElapsed signed / unsigned comparision
+- Rework seek (leading timing stream)
+- Fix YT streams / initialize TS::prev_payload_unit_pos (could lead to seek &gt; segment buffer)
+- [DASH] Fix double ! which forces SIDX retrieval by failure (Dazn)
+
+[B]Version 2.5.2-Matrix[/B]
+- version bump 2.5.2
+- Add play_timeshift_buffer=[true/false] listItem property to let liveTV events play from beginning
+- Add german translations (#341)
+- Add Dutch translations (#338)
+- [DolbyVision] transfer dvhe as hevc but set codec fourcc correctly
+- Add codec dvhe (DolbyVision)
+- Add Swedish translations
+- Add french translate
+- Add russian translation
+- Added Italian language
+- Streamselection "Manual video" added
+- [DASH] Fix empty period removal
+- [DASH] Calculate period durations from start tag
+- fix wrong name on Jenkinsfile, must be Matrix, not master
+- Debug log key Android key system request instead of Error
+
+[B]Version 2.5.1-Matrix[/B]
+- version bump 2.5.1
+- [WebVTT] binary representation
+- Support MP4 type TEXT
+- [Dash] detect subtitle stream labeled with video/mp4
+- Cosmetic
+- Add period time to PTS / fix wrong segment 1 for mediaRange
+- Free sampledecrypter instances on period change
+- [Android] check if valid JNI::bytearray was returned in getPropertyByteArray
+- [DASH] Fix startPTS for SegmentURL VOD streams
+- [dlfcn_win32] add patch for multichar path
+- Implement multiple periods support
+- Creation Spanish language (#318)
+
+[B]Version 2.5.0-Matrix[/B]
+- version bump 2.5.0
+
+[B]Version 2.4.1-Matrix[/B]
+- version bump 2.4.1
+- Fix Jenkinsfile
+
+[B]Version 2.4.0-Matrix[/B]
+- Final version bump -&gt; 2.4.0
+- Implement VP9 HDR static metadata using Inputstream api version 2.0.9
+- [DASH] xchange location_ between base and update tree
+- update CMakeLists.txt to 3.5
+
+[B]Version 2.3.22-Leia[/B]
+- Initial version
+</news><path>inputstream.adaptive.testing+linux/inputstream.adaptive.testing-2.6.0.2.zip</path></extension>
+</addon></addons>
