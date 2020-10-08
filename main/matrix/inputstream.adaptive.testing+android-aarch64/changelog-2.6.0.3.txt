@@ -1,0 +1,3 @@
+[B]Version v2.6.0.3[/B]
+- Wrong travis command
+- Fix missing dependencies for arm linux builds
