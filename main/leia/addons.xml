@@ -1,82 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="inputstream.adaptive.testing" name="InputStream Adaptive Testing" provider-name="peak3d" version="2.6.0.2">
-  <requires>
-<import addon="kodi.binary.global.main" version="1.0.14" />
-<import addon="kodi.binary.global.general" version="1.0.3" />
-<import addon="kodi.binary.global.filesystem" version="1.0.2" />
-<import addon="kodi.binary.instance.inputstream" version="2.0.8" />
-<import addon="kodi.binary.instance.videocodec" version="1.0.1" /></requires>
-  <extension extension="" library_osx="inputstream.adaptive.testing.2.6.0.dylib" listitemprops="license_type|license_key|license_data|license_flags|manifest_type|server_certificate|stream_headers|manifest_update_parameter|original_audio_language|media_renewal_url|media_renewal_time|max_bandwidth|play_timeshift_buffer" name="adaptive" point="kodi.inputstream" tags="true" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">InputStream client for adaptive streams</summary>
-    <summary lang="es_ES">Cliente InputStream para flujo de datos adaptativos</summary>
-    <description lang="en_GB">InputStream client for adaptive streams</description>
-    <description lang="es_ES">Cliente InputStream para flujo de datos adaptativos</description>
-    <platform>osx-x86_64</platform>
-    <news>[B]Version v2.6.0.2[/B]
-- Only show last tag's commits in changelog
-- update travis secure token
-- TravisCI integraton to build repo
-- Update Ubuntu version to 16.04
-- Make build scripts take kodi version argument
-- Matrix build scripts
-- add build_scripts
-- remove debug flags
-- Don't stack subtitle if begin and end are equal
-- Revert "Correct Dolby Vision implementation (Matrix Only)"
-- Fix stream count
-- Fix Leia compatibilty in CDllHelper
-- Fix compile errors
-- add Matrix &gt; Leia patch
-- Change Android search path for ssd_wv
-- Use CDllHelper for opening ssd_wv
-- Update README.md
-- Add parsing adaptionSet "name" parameter
-- inputstream.adaptive -&gt; inputstream.adaptive.testing
-- Correct Dolby Vision implementation (Matrix Only)
-- Remove logging of unknown encryption methods
-- Fix up effective url
-- FreeSegments - operate on specific period
-- [HLS] EXT-X-DISCONTINUITY-SEQUENCE support
-- [HLS][Revert] share parameters between master / sub playlists
-- Fix url decoder
-- [WebVTT] Fix binary representation
-- [Android] only request and log (max)securitylevel and querykeystatus if
-- [TTML] Fix wrong applied m_ptsOffset on first sub
-- Fix url decoder
-- ctest implementation
-- [DASH] Adjust timing calculation
-- VUI: use framerate only if fixed_frame_rate_flag is set
-- Simplify processEncryption
-- allow new dolby schemeIdUri
-- Clang format
-- Add .clang-format
-- Check for representation duration if seek past last segment
-- [WEBVTT] Allow timespec without hours
-- [Android] Log DRM securityLevel after key request
-- Fix Netflix subs on seek / resume play
-- Fix segmented subtitles for live streams
-- [DASH] Fix youtube live subtitles
-- [DASH] Fix youtube live with multiple subs
-- Update Bento4 17e26f7 -&gt; 158655e
-- Revert ReadGolomb/SignedGolomb to static
-- pass ssd in with AP4_CencSampleDecrypter::Create
-- Bento4: sample duration workaround (24/1)
-- Android 32 ftello
-- Hack HBO
-- Fix segfault when AP4_Sample's seek fails (double free)
-- Implement SPS Frame parser to get fps before first packet is send
-- [HLS + CODEC] Fixups - MP4: Implement MP4 DAC3 Atom (get correct channel count)
-- More HLS and cleanup
-- Fix VideoStreamChange by VUI Parser
-- SPS/VUI: swap fpsrate / scale
-- AACL: generate ESDS / AVC extract VUI values from SPS
-- more SPS parameters
-- Redo Backport of all smoothstream changes commit
-- Add additional methods/funtions and passing poolid
-- Update bento4 libs to 17e26f7, fix path issues
-</news><path>inputstream.adaptive.testing+osx-x86_64/inputstream.adaptive.testing-2.6.0.2.zip</path></extension>
-</addon><addon id="inputstream.adaptive.testing" name="InputStream Adaptive Testing" provider-name="peak3d" version="2.6.0.3">
+<addons><addon id="inputstream.adaptive.testing" name="InputStream Adaptive Testing" provider-name="peak3d" version="2.6.0.3">
   <requires>
 <import addon="kodi.binary.global.main" version="1.0.14" />
 <import addon="kodi.binary.global.general" version="1.0.3" />
@@ -148,4 +71,22 @@
 - Wrong travis command
 - Fix missing dependencies for arm linux builds
 </news><path>inputstream.adaptive.testing+windows-i686/inputstream.adaptive.testing-2.6.0.3.zip</path></extension>
+</addon><addon id="inputstream.adaptive.testing" name="InputStream Adaptive Testing" provider-name="peak3d" version="2.6.0.3">
+  <requires>
+<import addon="kodi.binary.global.main" version="1.0.14" />
+<import addon="kodi.binary.global.general" version="1.0.3" />
+<import addon="kodi.binary.global.filesystem" version="1.0.2" />
+<import addon="kodi.binary.instance.inputstream" version="2.0.8" />
+<import addon="kodi.binary.instance.videocodec" version="1.0.1" /></requires>
+  <extension extension="" library_osx="inputstream.adaptive.testing.2.6.0.dylib" listitemprops="license_type|license_key|license_data|license_flags|manifest_type|server_certificate|stream_headers|manifest_update_parameter|original_audio_language|media_renewal_url|media_renewal_time|max_bandwidth|play_timeshift_buffer" name="adaptive" point="kodi.inputstream" tags="true" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">InputStream client for adaptive streams</summary>
+    <summary lang="es_ES">Cliente InputStream para flujo de datos adaptativos</summary>
+    <description lang="en_GB">InputStream client for adaptive streams</description>
+    <description lang="es_ES">Cliente InputStream para flujo de datos adaptativos</description>
+    <platform>osx-x86_64</platform>
+    <news>[B]Version v2.6.0.3[/B]
+- Wrong travis command
+- Fix missing dependencies for arm linux builds
+</news><path>inputstream.adaptive.testing+osx-x86_64/inputstream.adaptive.testing-2.6.0.3.zip</path></extension>
 </addon></addons>
