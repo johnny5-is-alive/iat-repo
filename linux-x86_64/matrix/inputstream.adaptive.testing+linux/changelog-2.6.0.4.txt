@@ -1,0 +1,4 @@
+[B]Version v2.6.0.4[/B]
+- update leia patch
+- API related change
+- only install android apts when building for android
