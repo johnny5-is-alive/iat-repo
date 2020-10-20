@@ -18,4 +18,24 @@
 - Wrong travis command
 - Fix missing dependencies for arm linux builds
 </news><path>inputstream.adaptive.testing+linux/inputstream.adaptive.testing-2.6.0.3.zip</path></extension>
+</addon><addon id="inputstream.adaptive.testing" name="InputStream Adaptive Testing" provider-name="peak3d" version="2.6.0.4">
+  <requires>
+<import addon="kodi.binary.global.main" minversion="1.2.0" version="1.2.4" />
+<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
+<import addon="kodi.binary.global.filesystem" minversion="1.1.0" version="1.1.6" />
+<import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4" />
+<import addon="kodi.binary.instance.inputstream" minversion="2.3.4" version="2.3.4" />
+<import addon="kodi.binary.instance.videocodec" minversion="1.0.4" version="1.0.4" /></requires>
+  <extension extension="" library_linux="inputstream.adaptive.testing.so.2.6.0" listitemprops="license_type|license_key|license_data|license_flags|manifest_type|server_certificate|stream_headers|manifest_update_parameter|original_audio_language|media_renewal_url|media_renewal_time|max_bandwidth|play_timeshift_buffer" name="adaptive" point="kodi.inputstream" tags="true" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">InputStream client for adaptive streams</summary>
+    <summary lang="es_ES">Cliente InputStream para flujo de datos adaptativos</summary>
+    <description lang="en_GB">InputStream client for adaptive streams</description>
+    <description lang="es_ES">Cliente InputStream para flujo de datos adaptativos</description>
+    <platform>linux</platform>
+    <news>[B]Version v2.6.0.4[/B]
+- update leia patch
+- API related change
+- only install android apts when building for android
+</news><path>inputstream.adaptive.testing+linux/inputstream.adaptive.testing-2.6.0.4.zip</path></extension>
 </addon></addons>
