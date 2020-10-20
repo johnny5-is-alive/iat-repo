@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="inputstream.adaptive.testing" name="InputStream Adaptive Testing" provider-name="peak3d" version="2.6.0.3">
+<addon id="inputstream.adaptive.testing" name="InputStream Adaptive Testing" provider-name="peak3d" version="2.6.0.4">
   <requires>
 <import addon="kodi.binary.global.main" version="1.0.14" />
 <import addon="kodi.binary.global.general" version="1.0.3" />
@@ -13,8 +13,9 @@
     <description lang="en_GB">InputStream client for adaptive streams</description>
     <description lang="es_ES">Cliente InputStream para flujo de datos adaptativos</description>
     <platform>android-armv7</platform>
-    <news>[B]Version v2.6.0.3[/B]
-- Wrong travis command
-- Fix missing dependencies for arm linux builds
+    <news>[B]Version v2.6.0.4[/B]
+- update leia patch
+- API related change
+- only install android apts when building for android
 </news></extension>
 </addon>
