@@ -428,4 +428,95 @@
 - [DASH] Fix youtube live subtitles
 - [DASH] Fix youtube live with multiple subs
 </news><path>inputstream.adaptive.testing+android-armv7/inputstream.adaptive.testing-2.6.6-Matrix.zip</path></extension>
+</addon><addon id="inputstream.adaptive.testing" name="InputStream Adaptive Testing" provider-name="peak3d" version="2.6.6-Matrix">
+  <requires>
+<import addon="kodi.binary.global.main" minversion="1.2.0" version="1.3.0" />
+<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
+<import addon="kodi.binary.global.filesystem" minversion="1.1.0" version="1.1.6" />
+<import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4" />
+<import addon="kodi.binary.instance.inputstream" minversion="3.0.1" version="3.0.1" />
+<import addon="kodi.binary.instance.videocodec" minversion="2.0.1" version="2.0.2" /></requires>
+  <extension extension="" library_osx="inputstream.adaptive.testing.2.6.6.dylib" listitemprops="license_type|license_key|license_data|license_flags|manifest_type|server_certificate|stream_headers|manifest_update_parameter|original_audio_language|media_renewal_url|media_renewal_time|max_bandwidth|play_timeshift_buffer" name="adaptive" point="kodi.inputstream" tags="true" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">InputStream client for adaptive streams</summary>
+    <summary lang="es_ES">Cliente InputStream para flujo de datos adaptativos</summary>
+    <description lang="en_GB">InputStream client for adaptive streams</description>
+    <description lang="es_ES">Cliente InputStream para flujo de datos adaptativos</description>
+    <platform>osx-x86_64</platform>
+    <news>[B]Version v2.6.6-Matrix[/B]
+- Version bump to 2.6.6
+- increase version to 2.6.5 (API related)
+- inputstream.adaptive -&gt; inputstream.adaptive.testing
+- version bump 2.6.4
+- Fix protocol search in url
+- version bump 2.6.3
+- [DASH] remove static time helper in SegmentTemplate
+- Fix local filenames / base_domain
+- version bump -&gt; 2.6.2
+- use ATTRIBUTE_HIDDEN on all classes to prevent warning and have more safe
+- use C++ kodi::addon::VideoCodecInitdata
+- separate C++ and C parts in own headers
+- use "C" only DEMUX_PACKET
+- use StreamCrypto.h in own folder and improve
+- move StreamCodec.h to inputstream folder
+- use independent TimingConstants.h for addons
+- use C++ class for INPUTSTREAM_MASTERING_METADATA and INPUTSTREAM_CONTENTLIGHT_METADATA
+- use C++ InputstreamInfo to translate INPUTSTREAM_INFO
+- use C++ InputstreamCapabilities to translate INPUTSTREAM_CAPABILITIES
+- use C++ InputstreamProperty to translate INPUTSTREAM_PROPERTY
+- Bento4 update
+- Remove duplicate languages
+- use special callback on GetStream function
+- change interface headers to match and support C style
+- change get_stream call to match C API
+- change get_stream_ids call to match "C" API
+- [MPD] don't overwrite initial base_path
+- Drop kodiplatform from d/control
+- effective_domain imlementation for absolute paths
+- Revert "xchange base_url with effective_url instead replacing before download"
+- version bump -&gt; 2.6.1
+- Fix '6play' test
+- DASHTreeTest: print hex strings
+- DASHTreeTest: fix 'unsigned char' printing
+- Add Hebrew translation [he_IL]
+- Fix manifest_parameter -&gt; update_parameter
+- Updated german translation
+- Fix WebVTT 4 / 5 time length
+- xchange base_url with effective_url instead replacing before download
+- [HLS][Revert] share parameters between master / sub playlists
+- Remove logging of unknown encryption methods (logspam)
+- API related change
+- [WebVTT] Fix binary representation
+- remove debug flags
+- Don't stack subtitle if begin and end are equal
+- FreeSegments - operate on specific period
+- [HLS] EXT-X-DISCONTINUITY-SEQUENCE support
+- Use CDllHelper for opening ssd_wv
+- Add parsing adaptionSet "name" parameter
+- Update Swedish translation
+- Fix url decoder
+- Updated italian translation
+- Improved language files
+- Fixed wrong uppercase
+- Moved slovak translation to language folder
+- [Android] only request and log (max)securitylevel and querykeystatus if
+- [TTML] Fix wrong applied m_ptsOffset on first sub
+- Correct Dolby Vision implementation (Matrix Only)
+- Fix url decoder
+- Updated Swedish translations
+- ctest implementation
+- [DASH] Adjust timing calculation
+- VUI: use framerate only if fixed_frame_rate_flag is set
+- Simplify processEncryption
+- allow new dolby schemeIdUri
+- Clang format
+- Add .clang-format
+- Check for representation duration if seek past last segment
+- [WEBVTT] Allow timespec without hours
+- [Android] Log DRM securityLevel after key request
+- Fix Netflix subs on seek / resume play
+- Fix segmented subtitles for live streams
+- [DASH] Fix youtube live subtitles
+- [DASH] Fix youtube live with multiple subs
+</news><path>inputstream.adaptive.testing+osx-x86_64/inputstream.adaptive.testing-2.6.6-Matrix.zip</path></extension>
 </addon></addons>
