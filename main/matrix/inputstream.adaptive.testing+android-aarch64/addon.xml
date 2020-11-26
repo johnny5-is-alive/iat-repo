@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="inputstream.adaptive.testing" name="InputStream Adaptive Testing" provider-name="peak3d" version="2.6.6-Matrix">
+<addon id="inputstream.adaptive.testing" name="InputStream Adaptive Testing" provider-name="peak3d" version="2.6.6.1-Matrix">
   <requires>
 <import addon="kodi.binary.global.main" minversion="1.2.0" version="1.3.0" />
 <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5" />
@@ -14,10 +14,10 @@
     <description lang="en_GB">InputStream client for adaptive streams</description>
     <description lang="es_ES">Cliente InputStream para flujo de datos adaptativos</description>
     <platform>android-aarch64</platform>
-    <news>[B]Version v2.6.6-Matrix[/B]
+    <news>[B]Version v2.6.6.1-Matrix[/B]
+- inputstream.adaptive -&gt; inputstream.adaptive.testing
 - Version bump to 2.6.6
 - increase version to 2.6.5 (API related)
-- inputstream.adaptive -&gt; inputstream.adaptive.testing
 - version bump 2.6.4
 - Fix protocol search in url
 - version bump 2.6.3
@@ -35,7 +35,6 @@
 - use C++ InputstreamInfo to translate INPUTSTREAM_INFO
 - use C++ InputstreamCapabilities to translate INPUTSTREAM_CAPABILITIES
 - use C++ InputstreamProperty to translate INPUTSTREAM_PROPERTY
-- Bento4 update
 - Remove duplicate languages
 - use special callback on GetStream function
 - change interface headers to match and support C style
